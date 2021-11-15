@@ -13,12 +13,17 @@
   clear: both;
 }
 
+
+/* Utility */
+
 body{
   max-width: 1200px;
   margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
+  position: relative;
   margin-top: 20px;
   height: 100px;
   background-color: rgb(240, 92, 136);
@@ -31,16 +36,43 @@ footer{
   background-color: rgb(175, 25, 130);
 }
 
+header img{
+  max-width: 150px;
+}
+
+ul li{
+  list-style-type: none;
+  display: inline;
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+nav{
+  position: absolute;
+  bottom: 0;
+}
+
+/* .nav-button{
+  display: inline;
+  list-style-type: none;
+} */
+
+/* Main Section */
+
 .box{
   width: calc(100% - 40px);
   margin: 40px auto;
 }
 
-.full{
+.articles{
   background-color: blue;
 }
 
-.empty{
+.spotlight{
   background-color: goldenrod;
   height: 400px;
 }
@@ -51,6 +83,9 @@ footer{
   float: left;
   
 }
+
+
+/* Articles Section */
 
 .full .headline{
   height: 100px;   
