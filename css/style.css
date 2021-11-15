@@ -30,6 +30,15 @@ footer{
   background-color: rgb(175, 25, 130);
 }
 
+.black-layer{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.425);
+  border-radius: 20px;
+}
+
 
 /* Title +  Nav */
 
@@ -71,10 +80,6 @@ nav{
   background-color: blue;
 }
 
-.spotlight{
-
-  height: 500px;
-}
 
 .innerbox{
   background-color: cadetblue;
@@ -85,6 +90,10 @@ nav{
 
 /* Spotlight Section */
 
+.spotlight{
+  position: relative;
+  height: 500px;
+}
 /* div.spotlight img{
   width: 100%;
   height: 100%;
@@ -99,7 +108,11 @@ nav{
   background-size: cover;
   background-position-y: 50%;
   border-radius: 20px;
-  
+  position: relative; 
+}
+
+div.black-layer h2, div.blacklayer p{
+ 
 }
 
 
